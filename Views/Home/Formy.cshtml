@@ -1,0 +1,31 @@
+
+@{
+    ViewData["Title"] = "Calculator";
+}
+@model CalculationModel
+
+<form method="POST">
+    <div asp-validation-summary="All"></div>
+    <input type="text" asp-for="grade1" placeholder="grade 1">
+    <label asp-validation-for="grade1"></label>
+    <br>
+    <br>
+    <input type="text" asp-for="grade2" placeholder="grade 2">
+    <label asp-validation-for="grade2"></label>
+    <br>
+    <br>
+    <input type="text" asp-for="grade3" placeholder="grade 3">
+    <label asp-validation-for="grade3"></label>
+    <br>
+    <br>
+    <button type="submit">calculate</button>
+</form>
+
+<div>@Html.Label(m => m.avgGrade)</div>
+
+@section Scripts {
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}
+<script src="js/site.js"></script>
