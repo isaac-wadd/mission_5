@@ -31,8 +31,8 @@ namespace mission_5.Controllers {
 
         [HttpPost]
         public IActionResult CalculationForm(CalculationModel calcModel) {
-            if (ModelState.IsValid()) {
-                return View(calcModel);
+            if (ModelState.IsValid) {
+                return View();
             }
             return View();
         }

@@ -1,0 +1,44 @@
+
+@{
+    ViewData["Title"] = "Calculator";
+}
+@model CalculationModel
+
+<form id="gradesForm">
+    <div asp-validation-summary="All"></div>
+    <input type="text" class="gradeInput" name="Assignments" asp-for="assignments" placeholder="assignments grade">
+    <label asp-validation-for="assignments"></label>
+    <br>
+    <br>
+    <input type="text" class="gradeInput" name="Group Projects" asp-for="groupProjects" placeholder="group projects grade">
+    <label asp-validation-for="groupProjects"></label>
+    <br>
+    <br>
+    <input type="text" class="gradeInput" name="Quizzes" asp-for="quizzes" placeholder="quizzes grade">
+    <label asp-validation-for="quizzes"></label>
+    <br>
+    <br>
+    <input type="text" class="gradeInput" name="Midterm Exam" asp-for="midterm" placeholder="midterm exam grade">
+    <label asp-validation-for="midterm"></label>
+    <br>
+    <br>
+    <input type="text" class="gradeInput" name="Final Exam" asp-for="final" placeholder="final exam grade">
+    <label asp-validation-for="final"></label>
+    <br>
+    <br>
+    <input type="text" class="gradeInput" name="INTEX" asp-for="intex" placeholder="INTEX grade">
+    <label asp-validation-for="intex"></label>
+    <br>
+    <br>
+    <button type="submit">calculate</button>
+</form>
+
+<span id="overallGrade"></span>
+
+<script src="~/js/grades.js" asp-append-version="true"></script>
+
+@* @section Scripts {
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+} *@

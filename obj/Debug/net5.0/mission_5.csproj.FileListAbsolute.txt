@@ -37,4 +37,4 @@
 /Users/isaac.wadd/Library/CloudStorage/OneDrive-BYU/Winter 2023/413 - Enterprise Dev/projects/mission_5/obj/Debug/net5.0/mission_5.pdb
 /Users/isaac.wadd/Library/CloudStorage/OneDrive-BYU/Winter 2023/413 - Enterprise Dev/projects/mission_5/obj/Debug/net5.0/mission_5.genruntimeconfig.cache
 /Users/isaac.wadd/Library/CloudStorage/OneDrive-BYU/Winter 2023/413 - Enterprise Dev/projects/mission_5/obj/Debug/net5.0/mission_5.csproj.CopyComplete
-/Users/isaac.wadd/Library/CloudStorage/OneDrive-BYU/Winter 2023/413 - Enterprise Dev/projects/mission_5/obj/Debug/net5.0/Razor/Views/Home/Formy.cshtml.g.cs
+/Users/isaac.wadd/Library/CloudStorage/OneDrive-BYU/Winter 2023/413 - Enterprise Dev/projects/mission_5/obj/Debug/net5.0/Razor/Views/Home/CalculationForm.cshtml.g.cs

@@ -1,9 +1,50 @@
-﻿
+
 @{
     ViewData["Title"] = "Home Page";
 }
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!-- Masthead-->
+<link rel="stylesheet" href="/styles/myStyles.css">
+<header class="masthead bg-primary text-white text-center">
+    <div class="container d-flex align-items-center flex-column">
+        <!-- Masthead Avatar Image-->
+        <div class="circ">
+            <img src="/img/profPic3point0.jpeg" alt="..." />
+        </div>
+        <!-- Masthead Heading-->
+        <h1 class="masthead-heading text-uppercase mb-0">Isaac Waddell</h1>
+    </div>
+</header>
+<!-- About Section-->
+<section class="page-section bg-primary text-white mb-0" id="about">
+    <div class="container">
+        <!-- About Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- About Section Content-->
+        <div class="row">
+            <div class="col-lg-4 ms-auto">
+                <p class="lead">
+                    <h5>What I hope to learn...</h5>
+                    I hope that, from the skills I learn in this class, to become a more versatile asset to whichever<br>
+                    company I work for in the future, as well as help others understand
+                    <a class="text-white" href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank" rel="noopener noreferrer">C#</a>,
+                    <a class="text-white" href="https://www.javascript.com" target="_blank" rel="noopener noreferrer">JavaScript</a>, and
+                    <a class="text-white" href="https://dotnet.microsoft.com/en-us/learn/aspnet/what-is-aspnet" target="_blank" rel="noopener noreferrer">ASP.NET</a> more fully.
+                </p>
+            </div>
+            <div class="col-lg-4 me-auto">
+                <p class="lead">
+                    <h5>I would love to be...</h5>
+                    <li>systems analysis/design consultant</li>
+                    <li>full time systems analyst/designer for *company*</li>
+                    <li>cybersecurity consultant</li>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
