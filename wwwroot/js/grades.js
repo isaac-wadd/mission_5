@@ -8,20 +8,13 @@ const gradeWeights = {
     'INTEX': 0.1
 }
 
-// $('#gradesForm').submit(function(e) {
-//     e.preventDefault();
-// });
+$('#gradesForm').submit(function(e) {
+    e.preventDefault();
+});
 
 function calcOverallGrade() {
     let overall = 0;
-    let inputVals = [];
     $('.gradeInput').each(function() {
-        inputVals.push($(this).val());
-    });
-    console.log(inputVals);
-    $('.gradeInput').each(function() {
-        console.log(gradeWeights[$(this).attr('name')]);
-        console.log(Number($(this).val()) / 100 * gradeWeights[$(this).attr('name')]);
         overall += (Number($(this).val()) / 100 * gradeWeights[$(this).attr('name')]);
     });
     overall = Math.floor((overall * 100) + 0.5);
