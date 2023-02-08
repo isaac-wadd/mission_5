@@ -6,33 +6,35 @@
 
 <form id="gradesForm">
     <div asp-validation-summary="All"></div>
-    <input type="text" class="gradeInput" name="Assignments" asp-for="assignments" placeholder="assignments grade">
+    <input id="assignments" type="text" class="gradeInput" name="Assignments" asp-for="assignments" placeholder="assignments grade" value=0.0>
     <label asp-validation-for="assignments"></label>
     <br>
     <br>
-    <input type="text" class="gradeInput" name="Group Projects" asp-for="groupProjects" placeholder="group projects grade">
+    <input id="groupProjects" type="text" class="gradeInput" name="Group Projects" asp-for="groupProjects" placeholder="group projects grade">
     <label asp-validation-for="groupProjects"></label>
     <br>
     <br>
-    <input type="text" class="gradeInput" name="Quizzes" asp-for="quizzes" placeholder="quizzes grade">
+    <input id="quizzes" type="text" class="gradeInput" name="Quizzes" asp-for="quizzes" placeholder="quizzes grade">
     <label asp-validation-for="quizzes"></label>
     <br>
     <br>
-    <input type="text" class="gradeInput" name="Midterm Exam" asp-for="midterm" placeholder="midterm exam grade">
+    <input id="midterm" type="text" class="gradeInput" name="Midterm Exam" asp-for="midterm" placeholder="midterm exam grade">
     <label asp-validation-for="midterm"></label>
     <br>
     <br>
-    <input type="text" class="gradeInput" name="Final Exam" asp-for="final" placeholder="final exam grade">
+    <input id="final" type="text" class="gradeInput" name="Final Exam" asp-for="final" placeholder="final exam grade">
     <label asp-validation-for="final"></label>
     <br>
     <br>
-    <input type="text" class="gradeInput" name="INTEX" asp-for="intex" placeholder="INTEX grade">
+    <input id="intex" type="text" class="gradeInput" name="INTEX" asp-for="intex" placeholder="INTEX grade">
     <label asp-validation-for="intex"></label>
     <br>
     <br>
     <button type="submit">calculate</button>
 </form>
-
+<br>
+<br>
+<br>
 <span id="overallGrade"></span>
 
 <script src="~/js/grades.js" asp-append-version="true"></script>

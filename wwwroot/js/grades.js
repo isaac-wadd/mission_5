@@ -1,5 +1,6 @@
 
-const gradeWeights = {
+// using a dictionary in this case makes it easier to refer to the specific point weights
+const GRADE_WEIGHTS = {
     'Assignments': 0.5,
     'Group Projects': 0.1,
     'Quizzes': 0.1,
@@ -8,20 +9,31 @@ const gradeWeights = {
     'INTEX': 0.1
 }
 
-$('#gradesForm').submit(function(e) {
-    e.preventDefault();
+$('.gradeInput').each(function() {
+    let newLabel = $('<label>');
+    newLabel.attr('for', $(this).attr('id'));
+    newLabel.text($(this).attr('id') + ' grade');
+    let newBr = $('<br>');
+    $(this).before(newLabel).before(newBr).before(newBr);
 });
 
 function calcOverallGrade() {
+
+// add functionality of collecting the values from each input
     let overall = 0;
     $('.gradeInput').each(function() {
-        overall += (Number($(this).val()) / 100 * gradeWeights[$(this).attr('name')]);
+        overall += (Number($(this).val()) * GRADE_WEIGHTS[$(this).attr('name')]);
     });
-    overall = Math.floor((overall * 100) + 0.5);
-    console.log(overall);
+
+// round overall grade, set text to updated overall
+    overall = Math.floor(overall + 0.5);
     $('#overallGrade').text('Overall Grade: ' + String(overall) + '%');
 }
 
-$('.gradeInput').change(function() {
+// use the form to calculate the overall grade and output it using function 'calcOverallGrade()'
+$('#gradesForm').submit(function(e) {
     calcOverallGrade();
+    e.preventDefault();
 });
+
+calcOverallGrade();

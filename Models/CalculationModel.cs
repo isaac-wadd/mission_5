@@ -7,30 +7,23 @@ using System.Threading.Tasks;
 
 namespace mission_5.Models {
     public class CalculationModel {
-        [Required]
+
         [Range(0, 100, ErrorMessage = "Must be between 0 and 100")]
         public double assignments { get; set; } = 0.0;
 
-        [Required]
         [Range(0, 100, ErrorMessage = "Must be between 0 and 100")]
         public double groupProjects { get; set; } = 0.0;
 
-        [Required]
         [Range(0, 100, ErrorMessage = "Must be between 0 and 100")]
         public double quizzes { get; set; } = 0.0;
 
-        [Required]
         [Range(0, 100, ErrorMessage = "Must be between 0 and 100")]
         public double midterm { get; set; } = 0.0;
 
-        [Required]
         [Range(0, 100, ErrorMessage = "Must be between 0 and 100")]
         public double final { get; set; } = 0.0;
 
-        [Required]
         [Range(0, 100, ErrorMessage = "Must be between 0 and 100")]
         public double intex { get; set; } = 0.0;
-
-        // public decimal avgGrade { get; set; } = (self.grade1 + self.grade2 + self.grade3) / 3;
     }
 }
