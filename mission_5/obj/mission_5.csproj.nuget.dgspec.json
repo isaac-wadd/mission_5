@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/isaac.wadd/Library/CloudStorage/OneDrive-BYU/Winter 2023/413 - Enterprise Dev/projects/mission_5/mission_5.csproj": {}
+    "/Users/isaac.wadd/Library/CloudStorage/OneDrive-BYU/Winter 2023/413 - Enterprise Dev/projects/mission_5/mission_5/mission_5.csproj": {}
   },
   "projects": {
-    "/Users/isaac.wadd/Library/CloudStorage/OneDrive-BYU/Winter 2023/413 - Enterprise Dev/projects/mission_5/mission_5.csproj": {
+    "/Users/isaac.wadd/Library/CloudStorage/OneDrive-BYU/Winter 2023/413 - Enterprise Dev/projects/mission_5/mission_5/mission_5.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/isaac.wadd/Library/CloudStorage/OneDrive-BYU/Winter 2023/413 - Enterprise Dev/projects/mission_5/mission_5.csproj",
+        "projectUniqueName": "/Users/isaac.wadd/Library/CloudStorage/OneDrive-BYU/Winter 2023/413 - Enterprise Dev/projects/mission_5/mission_5/mission_5.csproj",
         "projectName": "mission_5",
-        "projectPath": "/Users/isaac.wadd/Library/CloudStorage/OneDrive-BYU/Winter 2023/413 - Enterprise Dev/projects/mission_5/mission_5.csproj",
+        "projectPath": "/Users/isaac.wadd/Library/CloudStorage/OneDrive-BYU/Winter 2023/413 - Enterprise Dev/projects/mission_5/mission_5/mission_5.csproj",
         "packagesPath": "/Users/isaac.wadd/.nuget/packages/",
-        "outputPath": "/Users/isaac.wadd/Library/CloudStorage/OneDrive-BYU/Winter 2023/413 - Enterprise Dev/projects/mission_5/obj/",
+        "outputPath": "/Users/isaac.wadd/Library/CloudStorage/OneDrive-BYU/Winter 2023/413 - Enterprise Dev/projects/mission_5/mission_5/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/isaac.wadd/.nuget/NuGet/NuGet.Config"
+          "/Users/isaac.wadd/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
